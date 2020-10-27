@@ -24,10 +24,9 @@ gulp.task('style', function(){
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
         'node_modules/slick-carousel/slick/slick.css',
-        'node_modules/magnific-popup/dist/jquery.magnific-popup.css'
     ])
     .pipe(concat('libs.min.css'))
-    .pipe(cssmi())
+    .pipe(cssmin())
     .pipe(gulp.dest('app/css'))
 });
 
