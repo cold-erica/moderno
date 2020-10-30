@@ -72,9 +72,12 @@ h6 {
   color: $color-bg;
   font-size: 36px;
   line-height: 60px;
-  font-weight: 700;
+  @include f700;
   text-align: center;
   margin-bottom: 30px;
+  &__white {
+    color: #fff;
+  }
 }
 // btn
 .btn {
@@ -101,7 +104,7 @@ h6 {
     margin-bottom: 60px;
   }
   &__btn {
-    font-weight: 500;
+    @include f500;
     padding: 12px 21px;
   }
   &__btn + &__btn {
@@ -141,19 +144,19 @@ h6 {
   &__title {
     display: block;
     color: $color-bg;
-    font-weight: 500;
+    @include f500;
     font-size: 18px;
     margin: 30px 0 15px;
   }
   &__category {
     display: block;
     color: $color-green;
-    font-weight: 500;
+    @include f500;
   }
   &__price {
     font-size: 20px;
     color: $color-bg;
-    font-weight: 700;
+    @include f700;
   }
   &__info {
     display: flex;
@@ -165,7 +168,7 @@ h6 {
     max-width: 245px;
     display: flex;
     align-items: center;
-    font-weight: 500;
+    @include f500;
     font-size: 14px;
   }
   &__photo {
