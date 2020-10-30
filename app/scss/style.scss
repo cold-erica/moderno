@@ -69,24 +69,24 @@
   }
   &__form {
     position: relative;
-    max-width: 670px;
+    width: 670px;
     margin: 0 auto;
   }
   &__form-box {
     font-size: 14px;
     font-weight: 500;
-    width: 100%;
+    width: 585px;
     height: 56px;
     display: block;
     box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+    padding-right: 60px;
+    padding-left: 25px;
     border: none;
     border-radius: 4px;
     outline-color: #00853c;
     &::placeholder {
       font-weight: 500;
       color: #90a4ae;
-      padding-right: 60px;
-      padding-left: 25px;
     }
     &:hover,
     &:active,
@@ -111,4 +111,42 @@
       outline-color: #00853c;
     }
   }
+  &__star {
+    span {
+      font-size: 12px;
+      color: $color-bg;
+    }
+  }
 }
+// product-slider
+.product-slider {
+  padding: 110px 0 120px;
+  .slick-dots {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      list-style: none;
+      margin-left: 3px;
+      margin-right: 3px;
+      cursor: pointer;
+      &.slick-active {
+        button {
+          background-color: $color-green;
+          outline-color: $color-green;
+        }
+      }
+      button {
+        font-size: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: rgb(232, 232, 232);
+        border: none;
+      }
+    }
+  }
+}
+
