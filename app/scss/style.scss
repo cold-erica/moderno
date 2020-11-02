@@ -205,12 +205,48 @@
   }
   .icon-svg2 {
     svg {
-    width: 70px;
+      width: 70px;
     }
   }
   .icon-svg3 {
     svg {
       width: 86px;
     }
+  }
+}
+// autor
+.autor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 750px;
+  background-image: url(../images/autor_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 655px;
+    width: 100%;
+    min-height: 215px;
+    background-color: $color-green;
+  }
+  &__title {
+    max-width: 280px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+    margin-right: 45px;
+    span {
+      @include f700;
+    }
+  }
+  &__link {
+    font-size: 18px;
+    color: $color-bg;
+    background-color: #fff;
+    padding: 26px 40px;
   }
 }
